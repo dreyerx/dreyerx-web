@@ -1,0 +1,25 @@
+<svg width="9588" height="5410" viewBox="0 0 9588 5410" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" style="stop-color:rgb(36,35,35);stop-opacity:0" />
+    <stop offset="100%" style="stop-color:rgb(36,35,35);stop-opacity:1" />
+  </linearGradient>
+  <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" style="stop-color:rgb(40,24,75);stop-opacity:0" />
+    <stop offset="100%" style="stop-color:rgb(40,24,75);stop-opacity:1" />
+  </linearGradient>
+  <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" style="stop-color:rgb(79,34,122);stop-opacity:0" />
+    <stop offset="100%" style="stop-color:rgb(79,34,122);stop-opacity:1" />
+  </linearGradient>
+  <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" style="stop-color:rgb(40,24,75);stop-opacity:0" />
+    <stop offset="100%" style="stop-color:rgb(40,24,75);stop-opacity:1" />
+  </linearGradient>
+</defs>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 3662.01C962.24 3421.19 1968.99 3169.3 3022 2905.56C5013.56 2406.76 7195.02 1860.62 9588 1261.41V4200.47C8092.5 4489.52 6683.08 4761.95 5353.79 5018.89C4660.08 5152.99 3985.55 5283.3 3329.64 5410H0L0 3662.01Z" fill="url(#grad1)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3533.44 518.865C4247.13 340.165 4937.66 167.271 5605.69 0.00195312H9588V860.029C9081.8 1012.69 8561.29 1169.66 8026.44 1330.91C7061.69 1621.78 6045 1928.19 4976.34 2250.38C4838.88 2291.82 4646 2227.76 4546.11 2107.92C4364.45 1889.98 4182.84 1672.1 4001.33 1454.32C3819.84 1236.6 3638.51 1018.76 3456.98 801.07C3357.42 681.689 3391.29 554.451 3533.44 518.865Z" fill="url(#grad2)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5965.97 513.72C6692.96 331.697 7375.99 160.804 8018.35 0.00195312H9588V1253.97C8915.21 1479.94 8193.29 1722.34 7418.26 1982.59C7305.26 2020.54 7133.65 1971.29 7035.55 1872.76C6855.57 1692.02 6673.99 1509.52 6490.65 1325.46C6305.53 1139.62 6118.66 951.982 5929.8 762.161C5825.33 657.155 5841.08 544.982 5965.97 513.72Z" fill="url(#grad3)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7469.71 975.426C8201.86 751.42 8881.14 543.621 9511.46 350.696L9588 327.272V1728.93C9267.24 1853.35 8934.38 1982.46 8589 2116.38C8505.71 2148.67 8378.59 2115.22 8305.11 2041.37C8169.35 1904.95 8031.02 1765.94 7889.9 1624.28C7746.07 1479.9 7599.3 1332.5 7449.46 1181.98C7365.9 1098.04 7374.26 1004.63 7469.71 975.426Z" fill="url(#grad4)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 4814.49C1918.47 4334.13 3759.23 3873.24 5525.04 3431.06C6921.14 3081.46 8275.3 2742.33 9588 2413.61V5410H0V4814.49Z" fill="url(#grad3)"/>
+</svg>
