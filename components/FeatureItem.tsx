@@ -13,7 +13,7 @@ export default function FeatureItem(props: FeatureProps) {
                     <Heading size={'md'}>{props.title}</Heading>
                 </Flex>
                 <Divider opacity={.2} />
-                <Text h={100}>
+                <Text h={['full', 100]}>
                     {props.description}
                 </Text>
                 <Button p={5} w={'50%'} mt={3} bgColor={'primary'}>

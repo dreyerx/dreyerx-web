@@ -5,13 +5,13 @@ import CallToAction from '../CallToAction'
 
 export default function HeroAction() {
     return (
-        <Flex height={'100vh'} justify={'center'} align={'center'} backgroundImage={'url("assets/images/dreyerx-hero-bg.svg")'} backgroundSize={'cover'} backgroundRepeat={'no-repeat'}>
-            <Flex flexDirection={'column'} gap={50} align={'center'}>
-                <Flex gap={10} justify={'center'} align={'center'}>
-                    <Heading textAlign={'center'} fontSize={'80px'} color={'primary'}>Dreyer X</Heading>
-                    <Heading textAlign={'center'} fontSize={'80px'}> Network</Heading>
+        <Flex height={['120vh', '100vh']} justify={'center'} align={'center'} backgroundImage={'url("assets/images/dreyerx-hero-bg.svg")'} backgroundSize={['cover', 'cover']} backgroundPosition={['bottom 0px center', '', '']} backgroundRepeat={'no-repeat'}>
+            <Flex flexDirection={'column'} gap={['30px', 50]} align={'center'}>
+                <Flex gap={[0, 10]} justify={'center'} align={'center'} flexDirection={['column', 'row']}>
+                    <Heading textAlign={'center'} fontSize={['50px', '80px']} color={'primary'}>Dreyer X</Heading>
+                    <Heading textAlign={'center'} fontSize={['50px', '80px']}>Network</Heading>
                 </Flex>
-                <Text textAlign={'center'} maxWidth={500}>
+                <Text textAlign={'center'} maxWidth={[300, 500]}>
                     Empowering transactions with speed and security on our POA-powered Layer 1 blockchain project
                 </Text>
                 <Box

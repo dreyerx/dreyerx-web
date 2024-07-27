@@ -10,19 +10,20 @@ const AboutSection = () => {
             flexDirection={'column'}
             bgColor={'bg'}
             align="center"
-            height={'100vh'}
-            px={'165px'}
+            height={['full', '100vh']}
+            px={[10, 0, '165px']}
             gap={'60px'}
+            py={[20, 0, 0]}
             justifyContent={'center'}
             backgroundImage={'url("assets/images/dreyerx-hero-bg2.svg")'}
-            backgroundPosition={'bottom -300px center'}
+            backgroundPosition={['bottom -300px center']}
             backgroundRepeat={'no-repeat'}
             backgroundSize={'cover'}
         >
             {/* <Box position={'absolute'}>
 
             </Box> */}
-            <Box mx={425}>
+            <Box mx={[10, 425]}>
                 <Heading textAlign={'center'} as="h1" size="2xl" mb="4" color="primary">
                     What is DreyerX?
                 </Heading>
@@ -30,7 +31,7 @@ const AboutSection = () => {
                     DreyerX is revolutionizing the networking world with secure, fast, and innovative solutions.
                 </Text>
             </Box>
-            <Flex gap={'20px'}>
+            <Flex gap={'20px'} flexDirection={['column', 'row']}>
                 <FeatureItem
                     icon="speed.svg"
                     title="Enhanced Transaction Speed"

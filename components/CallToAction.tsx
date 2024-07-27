@@ -5,8 +5,8 @@ import React from 'react'
 
 export default function CallToAction() {
     return (
-        <Flex gap={'50px'}>
-            <Flex bg={'card60'} borderWidth={1} borderColor={'white10'} width={400} p={7} borderRadius={20} cursor={'pointer'} justify={'space-between'} align={'center'} gap={2} _hover={{
+        <Flex gap={['20px', '50px']} flexDirection={['column', 'row']} >
+            <Flex bg={'card60'} borderWidth={1} borderColor={'white10'} width={[340, 400]} p={7} borderRadius={20} cursor={'pointer'} justify={'space-between'} align={'center'} gap={2} _hover={{
                 '& .icon': {
                     transition: 'all .5s ease-in-out',
                     transform: 'translateX(3px)'
@@ -20,7 +20,7 @@ export default function CallToAction() {
                     <FontAwesomeIcon icon={faArrowRight} />
                 </Button>
             </Flex>
-            <Flex bg={'card60'} borderWidth={1} borderColor={'white10'} width={400} p={7} borderRadius={20} cursor={'pointer'} justify={'space-between'} align={'center'} gap={2} _hover={{
+            <Flex bg={'card60'} borderWidth={1} borderColor={'white10'} width={[340, 400]} p={7} borderRadius={20} cursor={'pointer'} justify={'space-between'} align={'center'} gap={2} _hover={{
                 '& .icon': {
                     transition: 'all .5s ease-in-out',
                     transform: 'translateX(3px)'

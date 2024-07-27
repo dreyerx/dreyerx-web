@@ -6,9 +6,9 @@ import React from 'react'
 
 export default function FooterSection() {
   return (
-    <Flex width={'full'} flexDirection={'column'} bgColor={'footer'} p={'60px'} bottom={0}>
-      <Box mx={20}>
-        <Flex align={'start'} justify={'space-between'} >
+    <Flex width={'full'} flexDirection={'column'} bgColor={'footer'} p={['10px', '60px']} bottom={0} py={[20, 0]}>
+      <Box mx={[3, 20]}>
+        <Flex align={'start'} justify={'space-between'} flexDirection={['column', 'row']} gap={[10, 0]}>
           <Image src='assets/images/dreyerx-typograph.png' width={'200px'} alt='DreyerX Logo' />
           <Flex gap={3} flexDirection={'column'}>
             <Heading size={'sm'} mb={3} textTransform={'uppercase'}>
