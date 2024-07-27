@@ -22,6 +22,7 @@ const theme = extendTheme({
     success: '#80ff52',
     footer: '#141414',
     white10: '#ffffff0a',
+    white40: '#ffffff28',
     hover: {
       primary: '#661ca7'
     }
