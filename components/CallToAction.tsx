@@ -26,7 +26,7 @@ export default function CallToAction() {
                     transform: 'translateX(3px)'
                 }
             }}>
-                <Flex flexDirection={"column"} gap={'20px'}>~
+                <Flex flexDirection={"column"} gap={'20px'}>
                     <Heading size={'sm'}>Build with DreyerX</Heading>
                     <Text>Get access to our documents, and start building</Text>
                 </Flex>
