@@ -1,7 +1,8 @@
 'use client'
 import ProviderProps from '@/interface/props/ProviderProps'
 import { ChakraProvider, extendTheme, StyleFunctionProps, type ThemeConfig } from '@chakra-ui/react'
-import React from 'react'
+import Aos from 'aos'
+import React, { useEffect } from 'react'
 
 const config: ThemeConfig = {
   initialColorMode: 'light',
@@ -41,6 +42,9 @@ const theme = extendTheme({
 export { theme as ConfigTheme }
 
 export default function Provider(props: ProviderProps) {
+  useEffect(() => {
+    Aos.init();
+  });
   return (
     <ChakraProvider theme={theme}>
       {props.children}
