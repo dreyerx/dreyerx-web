@@ -20,7 +20,7 @@ export default function Header() {
         <Flex justify={'space-between'} align={'center'} w={'full'} mx={[0, 0, 20]}>
           <Image src='assets/images/LogoOnlyPNG.png' width={['30px', '0px', '40px']} alt='Logo Only' />
 
-          <Button onClick={() => setIsActiveBar(!isActiveBar)} display={['block', 'none', 'none']}>
+          <Button onClick={() => setIsActiveBar(!isActiveBar)} display={['block', 'none', 'none']} bgColor={'card'} color={'text'}>
             <FontAwesomeIcon icon={isActiveBar ? faClose : faBars} />
           </Button>
 
@@ -31,7 +31,7 @@ export default function Header() {
             <Link href='#'>Roadmap</Link>
           </Flex>
 
-          <Link bgColor={'primary'} display={['none', 'none', 'block']} size={'md'} p={2} px={3} borderRadius={5} fontWeight={'bold'} fontSize={15} transition={'.5s ease-in-out'} _hover={{ textDecoration: 'none', bgColor: 'hover.primary' }}>
+          <Link href='https://docs.dreyerx.com' bgColor={'primary'} display={['none', 'none', 'block']} size={'md'} p={2} px={3} borderRadius={5} fontWeight={'bold'} fontSize={15} transition={'.5s ease-in-out'} _hover={{ textDecoration: 'none', bgColor: 'hover.primary' }}>
             Use DreyerX
           </Link>
         </Flex>
@@ -42,20 +42,16 @@ export default function Header() {
         </Box>
         <Heading size={'sm'}>Use DreyerX</Heading>
 
-        <Flex flexDirection={"column"} mt={5}  gap={3}>
-          <Flex p={3}>
-            <Text>Ecosystem</Text>
-          </Flex>
+        <Flex flexDirection={"column"} mt={7}  gap={4}>
+          <Link href='#home' color={'text'}>Home</Link>
           <Divider />
-          <Flex p={3}>
-            <Text>Tokenmonics</Text>
-          </Flex>
+          <Link href='#ecosystem'>Ecosystem</Link>
           <Divider />
-          <Flex p={3}>
-            <Text>Roadmap</Text>
-          </Flex>
+          <Link href='#tokenmonics'>Tokenmonics</Link>
+          <Divider />
+          <Link href='#roadmap'>Roadmap</Link>
 
-          <Link bgColor={'primary'} mt={5} size={'md'} p={2} px={3} borderRadius={5} textAlign={'center'} fontWeight={'bold'} fontSize={15} transition={'.5s ease-in-out'} _hover={{ textDecoration: 'none', bgColor: 'hover.primary' }}>
+          <Link href='https://docs.dreyerx.com' bgColor={'primary'} mt={5} size={'md'} p={2} px={3} borderRadius={5} textAlign={'center'} fontWeight={'bold'} fontSize={15} transition={'.5s ease-in-out'} _hover={{ textDecoration: 'none', bgColor: 'hover.primary' }}>
             Use DreyerX
           </Link>
         </Flex>
