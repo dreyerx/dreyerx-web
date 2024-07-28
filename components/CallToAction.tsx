@@ -16,7 +16,7 @@ export default function CallToAction() {
                     <Heading size={'sm'}>Bridge to DreyerX</Heading>
                     <Text>Bridge your assets to DreyerX</Text>
                 </Flex>
-                <Button bgColor={'primary'} _hover={{ bgColor: 'hover.primary' }} className='icon' rounded={100}>
+                <Button bgColor={'primary'} _hover={{ bgColor: 'hover.primary' }} className='icon' rounded={100} color={'text'}>
                     <FontAwesomeIcon icon={faArrowRight} />
                 </Button>
             </Flex>
@@ -26,11 +26,11 @@ export default function CallToAction() {
                     transform: 'translateX(3px)'
                 }
             }}>
-                <Flex flexDirection={"column"} gap={'20px'}>
+                <Flex flexDirection={"column"} gap={'20px'}>~
                     <Heading size={'sm'}>Build with DreyerX</Heading>
                     <Text>Get access to our documents, and start building</Text>
                 </Flex>
-                <Button bgColor={'primary'} _hover={{ bgColor: 'hover.primary' }} rounded={100} className='icon'>
+                <Button bgColor={'primary'} _hover={{ bgColor: 'hover.primary' }} rounded={100} className='icon' color={'text'}>
                     <FontAwesomeIcon icon={faArrowRight} />
                 </Button>
             </Flex>
