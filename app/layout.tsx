@@ -38,7 +38,11 @@ export const metadata: Metadata = {
     description: "Empowering transactions with speed and security on our POA-powered Layer 1 blockchain project",
     siteName: "DreyerX",
     images: [{
-      url: "https://v2.dreyerx.com/assets/images/banner.png"
+      url: "https://v2.dreyerx.com/assets/images/banner.png",
+      alt: "DreyerX Open Graph Image",
+      width: 1920,
+      height: 1080,
+      type: "image/png"
     }]  
   },
   description: "Empowering transactions with speed and security on our POA-powered Layer 1 blockchain project",
