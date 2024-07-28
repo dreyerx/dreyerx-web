@@ -10,12 +10,12 @@ export default function HomeEcosystemSection() {
             h={['full', '100vh']}
             px={[10, 0, '165px']}
             gap={30}
-            py={[20, 0, 0]}
+            py={['100px', 0, 0]}
             justifyContent={'center'}
             backgroundImage={'url("assets/images/ecosystem-icons.svg")'}
-            backgroundPosition={'top -200px center'}
+            backgroundPosition={['top -90px center', 'top -200px center']}
             backgroundRepeat={'no-repeat'}
-            backgroundSize={'60%'}
+            backgroundSize={['100%', '60%']}
             backgroundBlendMode={'screen'}
         >
             <Box position={'absolute'} w={'70%'} h={700} bgColor={'primary'} zIndex={-1} filter={'blur(100px)'} rounded={360} opacity={.2}>
