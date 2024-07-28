@@ -12,7 +12,6 @@ export default function Home() {
     <>
       <Header />
       <Flex flexDirection={"column"} my={5}>
-        {/* <HeroDecoration /> */}
         <HeroSection />
         <AboutSection />
         <HomeEcosystemSection />
