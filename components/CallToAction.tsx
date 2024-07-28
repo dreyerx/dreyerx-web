@@ -5,13 +5,13 @@ import React from 'react'
 
 export default function CallToAction() {
     return (
-        <Flex gap={['20px', '50px']} flexDirection={['column', 'row']} >
+        <Flex gap={['20px', '50px']} flexDirection={['column', 'row']}>
             <Flex bg={'card60'} borderWidth={1} borderColor={'white10'} width={[340, 400]} p={7} borderRadius={20} cursor={'pointer'} justify={'space-between'} align={'center'} gap={2} _hover={{
                 '& .icon': {
                     transition: 'all .5s ease-in-out',
                     transform: 'translateX(3px)'
                 }
-            }}>
+            }} data-aos="fade-left">
                 <Flex flexDirection={"column"} gap={'20px'}>
                     <Heading size={'sm'}>Bridge to DreyerX</Heading>
                     <Text>Bridge your assets to DreyerX</Text>
@@ -25,7 +25,7 @@ export default function CallToAction() {
                     transition: 'all .5s ease-in-out',
                     transform: 'translateX(3px)'
                 }
-            }}>
+            }} data-aos="fade-right">
                 <Flex flexDirection={"column"} gap={'20px'}>
                     <Heading size={'sm'}>Build with DreyerX</Heading>
                     <Text>Get access to our documents, and start building</Text>
