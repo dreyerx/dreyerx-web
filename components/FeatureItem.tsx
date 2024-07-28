@@ -16,7 +16,7 @@ export default function FeatureItem(props: FeatureProps) {
                 <Text h={['full', 100]}>
                     {props.description}
                 </Text>
-                <Button p={5} w={['70%', '50%']} mt={3} bgColor={'primary'}>
+                <Button p={5} w={['70%', '50%']} mt={3} bgColor={'primary'} color={'text'}>
                     <Flex gap={3} align={'center'} justify={'center'} h={'full'}>
                         <Text>Read More</Text>
                         <FontAwesomeIcon icon={faArrowRight} />
