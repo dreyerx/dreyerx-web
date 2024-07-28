@@ -30,12 +30,12 @@ With innovative solutions in blockchain technology and a vibrant, global develop
             </Box>
 
             <Flex gap={5} flexDirection={['column', 'row']}>
-                <Flex flexDirection={'column'} w={'100%'} bgColor={'card60'} p={30} borderRadius={20} gap={3} borderWidth={1} borderColor={'white10'}>
+                <Flex flexDirection={'column'} w={'100%'} bgColor={'card60'} p={30} borderRadius={20} gap={3} borderWidth={1} borderColor={'white10'} data-aos="zoom-out">
                     <Heading size={'sm'}>FOR EVERYONE</Heading>
                     <Heading>20+ dApps</Heading>
 
                 </Flex>
-                <Flex flexDirection={'column'} w={'100%'} bgColor={'card60'} p={30} borderRadius={20} gap={3} borderWidth={1} borderColor={'white10'}>
+                <Flex flexDirection={'column'} w={'100%'} bgColor={'card60'} p={30} borderRadius={20} gap={3} borderWidth={1} borderColor={'white10'} data-aos="zoom-out">
                     <Heading size={'sm'}>FOR DEVELOPERS</Heading>
                     <Heading>100+ Developers</Heading>
                 </Flex>
