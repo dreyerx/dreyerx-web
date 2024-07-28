@@ -6,7 +6,7 @@ import React from 'react'
 
 export default function FeatureItem(props: FeatureProps) {
     return (
-        <Flex bgColor={'card40'} borderWidth={1} borderColor={'white10'} borderRadius={20} flexDirection={'column'} flexBasis={'50%'} transition={'all .8s ease-in-out'} _hover={{ transform: 'translateY(-10px)' }}>
+        <Flex bgColor={'card40'} borderWidth={1} borderColor={'white10'} borderRadius={20} flexDirection={'column'} flexBasis={'50%'} transition={'all .8s ease-in-out'} _hover={{ transform: 'translateY(-10px)' }} data-aos="fade-up" data-aos-anchor-placement="top-center">
             <Flex flexDirection={'column'} p={8} gap={'15px'}>
                 <Flex gap={3} alignItems={'center'}>
                     <Image src={`assets/icons/${props.icon}`} w={'50px'} h={'50px'} />
