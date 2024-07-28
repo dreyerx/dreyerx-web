@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans, Inter, Roboto } from "next/font/google";
 import Provider, { ConfigTheme } from "./providers";
+import "aos/dist/aos.css"
 
 const dmsans = DM_Sans({
   subsets: ['latin'],
