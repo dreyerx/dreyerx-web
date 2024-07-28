@@ -7,8 +7,8 @@ export default function HomeEcosystemSection() {
             w={'full'}
             flexDirection={'column'}
             align={'center'}
-            h={['full', '100vh']}
-            px={[10, 0, '165px']}
+            h={['full', 'full', '100vh']}
+            px={[10, '30px', '165px']}
             gap={30}
             py={['100px', 0, 0]}
             justifyContent={'center'}
@@ -26,7 +26,7 @@ export default function HomeEcosystemSection() {
                     Join Our Ecosystem?
                 </Heading>
                 <Text fontSize="lg" mb={'20px'} textAlign={'center'}>
-With innovative solutions in blockchain technology and a vibrant, global developer community, there's never been a better time to start building on DreyerX.                </Text>
+                    With innovative solutions in blockchain technology and a vibrant, global developer community, there's never been a better time to start building on DreyerX.                </Text>
             </Box>
 
             <Flex gap={5} flexDirection={['column', 'row']}>
