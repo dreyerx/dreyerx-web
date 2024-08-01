@@ -47,7 +47,7 @@ export default function RoadmapSection() {
     return (
         <Flex
             w={'full'}
-            flexDirection={'row'}
+            flexDirection={['column', 'row']}
             bgColor={'bg'}
             align="center"
             height={['full', '100vh']}

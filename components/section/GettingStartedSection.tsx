@@ -23,20 +23,21 @@ export default function GettingStartedSection() {
         h={'full'}
         borderWidth={1}
         borderColor={'white10'}
-        p={'100px'}
+        p={[30, '100px']}
+        py={['40px', '100px']}
         flexDirection={'column'}
         borderRadius={20}
-        gap={'200px'}
+        gap={[20, '200px']}
       >
-        <Flex justify={'space-between'} align={'end'} w={'full'}>
-          <Heading color={'text'} w={'400px'} size={'2xl'}>
+        <Flex justify={'space-between'} align={'end'} w={'full'} flexDirection={['column', 'row']}>
+          <Heading color={'text'} w={['full', '400px']} size={['lg', '2xl']}>
             Getting Started with DreyerX
           </Heading>
-          <Button bgColor={'primary'} p={5}>
+          <Button bgColor={'primary'} p={5} display={['none', 'block']}>
             Start Building
           </Button>
         </Flex>
-        <Flex gap={10}>
+        <Flex gap={10} flexDirection={['column', 'row']}>
           <Flex flexDirection={'column'} flexBasis={'50%'} gap={5}>
             <Flex bgColor={'primary'} w={'40px'} h={'40px'} justify={'center'} align={'center'} borderRadius={5}>
               <FontAwesomeIcon icon={faEthereum} size='xl' />
