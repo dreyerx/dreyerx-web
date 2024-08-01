@@ -1,4 +1,4 @@
-import { Box, Button, Collapse, Divider, Fade, Flex, Heading, Image, Link, Slide, Text } from '@chakra-ui/react'
+import { Box, Button, Collapse, Divider, Fade, Flex, Heading, Image, Link, LinkBox, LinkOverlay, Slide, Text } from '@chakra-ui/react'
 import { faBars, faClose } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect, useState } from 'react'
@@ -18,17 +18,21 @@ export default function Header() {
     <>
       <Flex bgColor={'bg'} p={[5, 0, 5]} px={[10, 0, 20]} shadow={'md'} width={'full'} borderRadius={10} position={'fixed'} top={0} zIndex={100}>
         <Flex justify={'space-between'} align={'center'} w={'full'} mx={[0, 0, 20]}>
-          <Image src='assets/images/LogoOnlyPNG.png' width={['30px', '0px', '40px']} alt='Logo Only' />
+          <LinkBox>
+            <LinkOverlay href='/'>
+              <Image src='assets/images/LogoOnlyPNG.png' width={['30px', '0px', '40px']} alt='Logo Only' />
+            </LinkOverlay>
+          </LinkBox>
 
           <Button onClick={() => setIsActiveBar(!isActiveBar)} display={['block', 'none', 'none']} bgColor={'card'} color={'text'} _hover={{ bgColor: 'card' }}>
             <FontAwesomeIcon icon={isActiveBar ? faClose : faBars} />
           </Button>
 
-          <Flex gap={5} display={['none', 'flex', 'flex']}>
-            <Link href='#home' color={'text'}>Home</Link>
-            <Link href='#ecosystem'>Ecosystem</Link>
-            <Link href='#tokenmonics'>Tokenmonics</Link>
-            <Link href='#roadmap'>Roadmap</Link>
+          <Flex gap={'40px'} display={['none', 'flex', 'flex']}>
+            <Link href='/#home' color={'text'}>Home</Link>
+            <Link href='/ecosystem'>Ecosystem</Link>
+            <Link href='/#tokenmonics'>Tokenmonics</Link>
+            <Link href='/#roadmap'>Roadmap</Link>
           </Flex>
 
           <Link href='https://docs.dreyerx.com' bgColor={'primary'} display={['none', 'none', 'block']} size={'md'} p={2} px={3} borderRadius={5} fontWeight={'bold'} fontSize={15} transition={'.5s ease-in-out'} _hover={{ textDecoration: 'none', bgColor: 'hover.primary' }}>

@@ -3,6 +3,7 @@ import { DM_Sans } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import Provider from "./providers";
+
 import "aos/dist/aos.css"
 
 const dmsans = DM_Sans({

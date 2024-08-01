@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "title": "Foundation",
+            "phase": "1",
+            "roads": [
+                "Team Expantion & Planning",
+                "Create Website",
+                "Audit Contract for $DRX Token",
+                "Web3 Foundation",
+                "Apply for Listings"
+            ]
+        },
+        {
+            "title": "Testnet Development",
+            "phase": "2",
+            "roads": [
+                "Launch Testnet Network",
+                "Launch Testnet Faucet",
+                "Audit Contract for $DRX Token",
+                "Web3 Foundation Launch",
+                "Apply for Listings"
+            ]
+        },
+        {
+            "title": "Foundation",
+            "phase": "1",
+            "roads": [
+                "Team Expantion & Planning",
+                "Create Website",
+                "Audit Contract for $DRX Token",
+                "Web3 Foundation Launch",
+                "Apply for Listings"
+            ]
+        },
+        {
+            "title": "Foundation",
+            "phase": "1",
+            "roads": [
+                "Team Expantion & Planning",
+                "Create Website",
+                "Audit Contract for $DRX Token",
+                "Web3 Foundation Launch",
+                "Apply for Listings"
+            ]
+        }
+    ]
+}
