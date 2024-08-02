@@ -10,7 +10,7 @@ export default function HomeEcosystemSection() {
             h={['full', 'full', '100vh']}
             px={[10, '30px', '165px']}
             gap={30}
-            py={['100px', 0, 0]}
+            py={['100px', 10, 10]}
             justifyContent={'center'}
             backgroundImage={'url("assets/images/ecosystem-icons.svg")'}
             backgroundPosition={['top -90px center', 'top -200px center']}
