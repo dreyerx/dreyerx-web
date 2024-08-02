@@ -1,4 +1,4 @@
-import { Divider, Flex, Heading, List, ListIcon, ListItem, Text } from '@chakra-ui/react'
+import { Button, Divider, Flex, Heading, List, ListIcon, ListItem, Text } from '@chakra-ui/react'
 import { faCheckDouble } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
@@ -11,43 +11,50 @@ interface RoadmapItemProps {
 }
 
 function RoadmapItem(props: RoadmapItemProps) {
-  return (
-      <Flex
-          bgColor={'card40'}
-          p={10}
-          borderWidth={1}
-          borderColor={'white10'}
-          backdropFilter={'blur(20px)'}
-          borderRadius={20}
-          flexDirection={'column'}
-          gap={3}
-      >
-          <Heading size={'sm'}>{ props.title }</Heading>
-          <Heading size={'lg'}>Phase { props.phase }</Heading>
-          <Divider color={'white10'} />
-          <Flex flexDirection={'column'} gap={3}>
-              {
-                props.roads.map((road) => {
-                    return (
-                        <Flex gap={2} align={'center'}>
-                            <FontAwesomeIcon icon={faCheckDouble} />
-                            <Text>
-                                { road }
-                            </Text>
-                        </Flex>
-                    )
-                })
-              }
-          </Flex>
-      </Flex>
-  )
+    return (
+        <Flex
+            bg={'card60'}
+            p={10}
+            borderWidth={1}
+            borderColor={'white10'}
+            backdropFilter={'blur(20px)'}
+            borderRadius={20}
+            flexDirection={'column'}
+            gap={3}
+            flexBasis={'50%'}
+            cursor={'pointer'}
+            transition={'all .5s ease-in-out'}
+            _hover={{
+                transform: ['translateY(-5px)', 'translateY(-20px)'],
+                borderColor: 'white20'
+            }}
+        >
+            <Heading size={'sm'} opacity={.9}>Phase {props.phase}</Heading>
+            <Heading size={'md'}>{props.title}</Heading>
+            <Divider color={'white10'} />
+            <Flex flexDirection={'column'} gap={3}>
+                {
+                    props.roads.map((road) => {
+                        return (
+                            <Flex gap={2} align={'center'}>
+                                <FontAwesomeIcon icon={faCheckDouble} />
+                                <Text>
+                                    {road}
+                                </Text>
+                            </Flex>
+                        )
+                    })
+                }
+            </Flex>
+        </Flex>
+    )
 }
 
 export default function RoadmapSection() {
     return (
         <Flex
             w={'full'}
-            flexDirection={['column', 'row']}
+            flexDirection={'column'}
             bgColor={'bg'}
             align="center"
             height={['full', '100vh']}
@@ -60,17 +67,26 @@ export default function RoadmapSection() {
             backgroundRepeat={'no-repeat'}
             backgroundSize={'cover'}
         >
-            {
-                RoadmapData.data.map((v) => {
-                    return (
-                        <RoadmapItem 
-                            title={v.title}
-                            phase={v.phase}
-                            roads={v.roads}
-                        />
-                    )
-                })
-            }
+            <Flex flexDirection={'column'} alignItems={'center'} mb={10}>
+                <Heading size={'xl'} mb={4}>Roadmap</Heading>
+                <Text fontSize={'lg'} textAlign={'center'} maxW={'600px'}>
+                    Here is the development roadmap for DreyerX, divided into four phases. This roadmap outlines the steps DreyerX will take in the near future to achieve its long-term goals and vision.
+                </Text>
+            </Flex>
+
+            <Flex flexDirection={['column', 'row']} gap={'20px'}>
+                {
+                    RoadmapData.data.map((v) => {
+                        return (
+                            <RoadmapItem
+                                title={v.title}
+                                phase={v.phase}
+                                roads={v.roads}
+                            />
+                        )
+                    })
+                }
+            </Flex>
         </Flex>
     )
 }
