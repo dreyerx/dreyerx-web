@@ -47,7 +47,7 @@ export const metadata: Metadata = {
       width: 1920,
       height: 1080,
       type: "image/png"
-    }]  
+    }]
   },
   description: "Empowering transactions with speed and security on our POA-powered Layer 1 blockchain project",
 };
