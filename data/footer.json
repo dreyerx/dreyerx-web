@@ -1,0 +1,76 @@
+{
+    "data": [
+        {
+            "title": "Explore",
+            "links": [
+                {
+                    "name": "Getting Started",
+                    "url": "https://docs.dreyerx.com"
+                },
+                {
+                    "name": "Staking",
+                    "url": "https://stake.dreyerx.com"
+                },
+                {
+                    "name": "Bridge",
+                    "url": "https://bridge.dreyerx.com"
+                },
+                {
+                    "name": "Swap",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "title": "EVM",
+            "links": [
+                {
+                    "name": "Testnet",
+                    "url": "https://chainlist.org/chain/23452"
+                },
+                {
+                    "name": "Mainnet",
+                    "url": "https://chainlist.org/chain/23451"
+                }
+            ]
+        },
+        {
+            "title": "Bulld on DreyerX",
+            "links": [
+                {
+                    "name": "Docs",
+                    "url": "https://docs.dreyerx.com"
+                },
+                {
+                    "name": "SDK",
+                    "url": "#"
+                },
+                {
+                    "name": "Academy",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "title": "Community",
+            "links": [
+                {
+                    "icon": "telegram",
+                    "url": "https://t.me/dreyerxcoin"
+                },
+                {
+                    "icon": "github",
+                    "url": "https://github.com/dreyerx"
+                },
+                {
+                    "icon": "medium",
+                    "url": "https://medium.com/@dreyerx"
+                },
+                {
+                    "icon": "x",
+                    "url": "https://t.me/dreyerxcoin"
+                }
+            ]
+        }
+    ]
+}
