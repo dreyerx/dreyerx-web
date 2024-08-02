@@ -1,5 +1,5 @@
 import FeatureProps from '@/interface/props/featureProps'
-import { Box, Button, Divider, Flex, Heading, Image, Text } from '@chakra-ui/react'
+import { Box, Button, Divider, Flex, Heading, Image, LinkBox, LinkOverlay, Text } from '@chakra-ui/react'
 import { faArrowRight, faStar } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
@@ -16,12 +16,16 @@ export default function FeatureItem(props: FeatureProps) {
                 <Text h={['full', 100]}>
                     {props.description}
                 </Text>
-                <Button p={5} w={['70%', '50%']} mt={3} bgColor={'primary'} color={'text'} justifySelf={'flex-end'}>
-                    <Flex gap={3} align={'center'} justify={'center'} h={'full'}>
-                        <Text>Read More</Text>
-                        <FontAwesomeIcon icon={faArrowRight} />
-                    </Flex>
-                </Button>
+                <LinkBox>
+                    <LinkOverlay href={props.url}>
+                        <Button p={5} w={['70%', '50%']} mt={3} bgColor={'primary'} color={'text'} justifySelf={'flex-end'} transition={'all .5s ease-in-out'} _hover={{ bgColor: 'hover.primary' }}>
+                            <Flex gap={3} align={'center'} justify={'center'} h={'full'}>
+                                <Text>Read More</Text>
+                                <FontAwesomeIcon icon={faArrowRight} />
+                            </Flex>
+                        </Button>
+                    </LinkOverlay>
+                </LinkBox>
             </Flex>
         </Flex>
     )
