@@ -11,16 +11,39 @@ import { useRef } from "react";
 import RoadmapSection from "@/components/section/RoadmapSection";
 
 export default function Home() {
-  const heroRef = useRef()
-  const aboutRef = useRef()
-  const homeEcosystemRef = useRef()
-  const gettingStartedRef = useRef()
+  console.log(`                                                 
+                   WELCOME TO DREYERX APP
 
+                          $$$$ ;xxx                          
+                   xxx xXXX$$& ;;;++xx  +x                   
+                $Xxxx xxxxXXX$ ;;;;++xxX+xxX$                
+              $XxxxX +++xxxxX$ :;;;++xxX$xxxX$&              
+             $XxxXX ++++++xxxX :++;++xxX$ xxXX$$             
+           XXxxXX$$ ;;+++++xxX ::+x++xxX$ XXXXXX$&           
+          xxxX      ;;;;++++xx ::::+xXX$$      $$$$          
+         x  XXX$$$$$X;;;;;+++x :::;;;;;;;;;;;+++  $$         
+          xxxxxxxxxX+;;;;;;+++ ;;;;;;;;;;;+++++++xx          
+         x++++++++xx:;;;;;;;++  ;;;;;;;+++++++xxxxxX         
+        x+;;;;;;+x;::::;;;;;     ;;+++++++xxxxxxXXXX$        
+        +;;;;;x+;:::::::;;         ++xxxxxXXXXXXX$$$$&       
+                                                             
+       $$$$$XXXxxxxxxx++++         ;;:::::::;+x;;;;;+        
+        $$XXXxxxx+++++;;;;;;     ;;;;;::::;x+;;;;;;+x        
+         XXxxxx+++++;;;;;;;;;   +;;;;;;;:+x+++++++++         
+          xxx++++++;;;;;;;;::: +++;;;;;;+Xxxxxxxxxx          
+         ++  ++++;;;;;;;;::::: xx++;;;;;x$$$$$XXX X$         
+          xxxx      $$XXx+:::: Xx++++;;;;      XX$$          
+           $XxxxXXX $Xxx++x+:: Xxx+++++;; +xxXX$$            
+             $XXXXX $Xxx++;++: $Xxx++++++ xxXX$&             
+              &$$XX$XXXx++;;;; $Xxxxx+++ XXX$&&              
+                &$$$$Xxx++;;;; &XXXxxxx+XX$&&                
+                   $$  x+x+;;; &$$XXXx $$$                   
+                          xxx+ $$$$`)
   return (
     <>
       <Header />
       <Flex flexDirection={"column"} my={5}>
-        <HeroSection ref={heroRef} />
+        <HeroSection />
         <AboutSection />
         <HomeEcosystemSection />
         <GettingStartedSection />
