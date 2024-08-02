@@ -16,11 +16,11 @@ export default function Header() {
 
   return (
     <>
-      <Flex bgColor={'bg'} p={[5, 0, 5]} px={[10, 0, 20]} shadow={'md'} width={'full'} borderRadius={10} position={'fixed'} top={0} zIndex={100}>
+      <Flex bgColor={'bg'} p={[5, 0, 5]} px={[10, 10, 20]} shadow={'md'} width={'full'} borderRadius={10} position={'fixed'} top={0} zIndex={100}>
         <Flex justify={'space-between'} align={'center'} w={'full'} mx={[0, 0, 20]}>
           <LinkBox>
             <LinkOverlay href='/'>
-              <Image src='assets/images/LogoOnlyPNG.png' width={['30px', '0px', '40px']} alt='Logo Only' />
+              <Image src='assets/images/LogoOnlyPNG.png' width={['30px', '40px', '40px']} alt='Logo Only' />
             </LinkOverlay>
           </LinkBox>
 
