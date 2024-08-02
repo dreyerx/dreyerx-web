@@ -4,44 +4,45 @@
             "title": "Foundation",
             "phase": "1",
             "roads": [
+                "Develop Smart Contracts",
+                "Marketing and Adoption Planning",
                 "Team Expantion & Planning",
-                "Create Website",
-                "Audit Contract for $DRX Token",
-                "Web3 Foundation",
-                "Apply for Listings"
+                "Website Creation",
+                "Whitepaper Creation"
             ]
         },
         {
-            "title": "Testnet Development",
+            "title": "Alpha Development",
             "phase": "2",
             "roads": [
-                "Launch Testnet Network",
-                "Launch Testnet Faucet",
-                "Audit Contract for $DRX Token",
-                "Web3 Foundation Launch",
-                "Apply for Listings"
+                "Launch Ecosystem $DRX Launchpad",
+                "Marketing Campaign",
+                "Testnet Launch",
+                "Token $DRX Launch",
+                "Release Dapps Stake Reward for Holders"
             ]
         },
         {
-            "title": "Foundation",
-            "phase": "1",
+            "title": "Beta Development",
+            "phase": "3",
             "roads": [
-                "Team Expantion & Planning",
-                "Create Website",
-                "Audit Contract for $DRX Token",
-                "Web3 Foundation Launch",
-                "Apply for Listings"
+                "Bridge Launch",
+                "DEX Listing",
+                "Community Engagement",
+                "Mainnet Launch",
+                "Swap Launch",
+                "Advertising Campaigns"
             ]
         },
         {
-            "title": "Foundation",
-            "phase": "1",
+            "title": "Continues Development",
+            "phase": "4",
             "roads": [
-                "Team Expantion & Planning",
-                "Create Website",
-                "Audit Contract for $DRX Token",
-                "Web3 Foundation Launch",
-                "Apply for Listings"
+                "Blockchain Scaling",
+                "Influencer Promotions & Media Coverage",
+                "Partnerships",
+                "Roadmap V2 Development",
+                "Smart Contract & NFT Integration on Blockchain"
             ]
         }
     ]
