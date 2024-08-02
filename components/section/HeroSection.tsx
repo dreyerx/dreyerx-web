@@ -3,9 +3,9 @@ import React, { Ref } from 'react'
 import TypingText from '../TypingText'
 import CallToAction from '../CallToAction'
 
-export default function HeroAction(props: { ref: any }) {
+export default function HeroAction() {
     return (
-        <Flex height={['120vh', '100vh']} justify={'center'} align={'center'} backgroundImage={'url("assets/images/dreyerx-hero-bg.svg")'} backgroundSize={['cover', 'cover']} backgroundPosition={['bottom 0px center', '', '']} backgroundRepeat={'no-repeat'}>
+        <Flex height={['full', '100vh']} py={['100px', 0]} justify={'center'} align={'center'} backgroundImage={'url("assets/images/dreyerx-hero-bg.svg")'} backgroundSize={['cover', 'cover']} backgroundPosition={['bottom 0px center', '', '']} backgroundRepeat={'no-repeat'}>
             <Flex flexDirection={'column'} gap={['30px', 50]} align={'center'}>
                 <Flex gap={[0, 10]} justify={'center'} align={'center'} flexDirection={['column', 'row']}>
                     <Heading textAlign={'center'} fontSize={['50px', '80px']} color={'primary'}>Dreyer X</Heading>
