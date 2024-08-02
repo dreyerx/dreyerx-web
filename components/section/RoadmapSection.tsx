@@ -13,6 +13,7 @@ interface RoadmapItemProps {
 function RoadmapItem(props: RoadmapItemProps) {
     return (
         <Flex
+            key={props.title}
             bg={'card60'}
             p={10}
             borderWidth={1}
@@ -36,7 +37,7 @@ function RoadmapItem(props: RoadmapItemProps) {
                 {
                     props.roads.map((road) => {
                         return (
-                            <Flex gap={2} align={'center'}>
+                            <Flex gap={2} align={'center'} key={road}>
                                 <FontAwesomeIcon icon={faCheckDouble} />
                                 <Text>
                                     {road}
