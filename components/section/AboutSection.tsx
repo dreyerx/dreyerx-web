@@ -34,16 +34,19 @@ const AboutSection = () => {
             <Flex gap={'20px'} flexDirection={['column', 'row']}>
                 <FeatureItem
                     icon="speed.svg"
+                    url="https://medium.com/@dreyerx/why-proof-of-authority-consensus-is-faster-and-more-energy-efficient-than-other-consensus-d3af54721050"
                     title="Enhanced Transaction Speed"
                     description="DreyerX leverages the Clique Proof of Authority (PoA) consensus mechanism to dramatically speed up transaction processing times, ensuring near-instantaneous confirmations for all transactions."
                 />
                 <FeatureItem
                     icon="scalabillity.svg"
+                    url="https://medium.com/@dreyerx/why-proof-of-authority-consensus-is-faster-and-more-energy-efficient-than-other-consensus-d3af54721050"
                     title="Scalability"
                     description="DreyerX is designed with scalability in mind, capable of handling a high volume of transactions to support mass adoption and widespread use."
                 />
                 <FeatureItem
                     icon="energy.svg"
+                    url="https://medium.com/@dreyerx/why-proof-of-authority-consensus-is-faster-and-more-energy-efficient-than-other-consensus-d3af54721050"
                     title="Sustainable and Energy-Efficient"
                     description="By using the Clique PoA consensus mechanism, DreyerX ensures a more energy-efficient and environmentally friendly blockchain solution compared to traditional proof-of-work systems."
                 />
