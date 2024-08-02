@@ -14,7 +14,7 @@ export default function GettingStartedSection() {
       py={['100px', 0, '100px']}
     >
       <Flex
-        bgImage={"url('assets/images/background-bloom2.svg')"}
+        bgImage={"url('assets/images/background-bloom3.svg')"}
         bgRepeat={'no-repeat'}
         bgSize={'cover'}
         bgPos={'center'}
@@ -33,9 +33,9 @@ export default function GettingStartedSection() {
           <Heading color={'text'} w={['full', '400px']} size={['lg', '2xl']}>
             Getting Started with DreyerX
           </Heading>
-          <Button bgColor={'primary'} p={5} display={['none', 'block']}>
+          {/* <Button bgColor={'primary'} p={5} display={['none', 'block']}>
             Start Building
-          </Button>
+          </Button> */}
         </Flex>
         <Flex gap={10} flexDirection={['column', 'row']}>
           <Flex flexDirection={'column'} flexBasis={'50%'} gap={5}>
