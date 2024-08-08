@@ -29,9 +29,9 @@ export default function Header() {
           </Button>
 
           <Flex gap={'40px'} display={['none', 'flex', 'flex']}>
-            <Link href='/#home' color={'text'}>Home</Link>
+            <Link href='/' color={'text'}>Home</Link>
             <Link href='/ecosystem'>Ecosystem</Link>
-            <Link href='/#tokenmonics'>Tokenmonics</Link>
+            <Link href='https://docs.dreyerx.com/architecrure/tokenomics'>Tokenmonics</Link>
             <Link href='/#roadmap'>Roadmap</Link>
           </Flex>
 
@@ -50,11 +50,11 @@ export default function Header() {
             <Heading size={'sm'} mt={5}>Use DreyerX</Heading>
 
             <Flex flexDirection={"column"} mt={7} gap={4}>
-              <Link href='#home' color={'text'}>Home</Link>
+              <Link href='/' color={'text'}>Home</Link>
               <Divider />
-              <Link href='#ecosystem'>Ecosystem</Link>
+              <Link href='/ecosystem'>Ecosystem</Link>
               <Divider />
-              <Link href='#tokenmonics'>Tokenmonics</Link>
+              <Link href='https://docs.dreyerx.com/architecrure/tokenomics'>Tokenmonics</Link>
               <Divider />
               <Link href='#roadmap'>Roadmap</Link>
 
