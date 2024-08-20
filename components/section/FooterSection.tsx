@@ -58,9 +58,11 @@ export default function FooterSection() {
       <Box mx={[0, 20]}>
         <Flex align={'start'} justify={'space-between'} flexDirection={['column', 'row']} gap={[10, 0]}>
           <Image src='assets/images/dreyerx-typograph.png' width={'200px'} alt='DreyerX Logo' />
-          {
-            FooterLinkRender({ data: FooterData.data })
-          }
+          <Flex gap={[10, 90]} flexDirection={['column', 'row']}>
+            {
+              FooterLinkRender({ data: FooterData.data })
+            }
+          </Flex>
         </Flex>
         <Text textAlign={'end'} mt={'60px'}>Copyright &copy; 2024 DreyerX</Text>
       </Box>
