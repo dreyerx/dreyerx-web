@@ -16,11 +16,12 @@ export default function Page() {
                 my={5}
                 w={'full'}
                 gap={'30px'}
-                justify={'center'}
+                // justify={'center'}
                 align={'center'}
-                h={'100vh'}
+                // h={'100vh'}
                 px={[10, 0, '165px']}
-                py={[20, 0, 0]}
+                py={[50, 0, 10]}
+                mt={200}
             >
                 <Heading size={'2xl'} w={600} textAlign={'center'}>
                     Explore the DreyerX Ecosystem
