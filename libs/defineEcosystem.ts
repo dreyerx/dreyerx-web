@@ -9,6 +9,5 @@ interface Ecosystem {
 }
 
 export default function defineEcosystem(ecosystemData: Ecosystem): Ecosystem {
-    // You can add any validation or processing logic here if needed
     return ecosystemData;
 }
