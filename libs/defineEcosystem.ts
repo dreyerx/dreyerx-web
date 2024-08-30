@@ -1,4 +1,4 @@
-type Category = 'infra' | 'dex' | 'bridge' | 'wallet' | 'gaming' | 'nft' | 'other';
+type Category = 'infra' | 'dex' | 'bridge' | 'wallet' | 'gaming' | 'nft' | 'sdk' | 'other';
 
 interface Ecosystem {
     name: string;
