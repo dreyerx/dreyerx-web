@@ -2,7 +2,7 @@
 import Header from '@/components/Header'
 import FooterSection from '@/components/section/FooterSection'
 import { EcosystemData } from '@/data/ecosystem'
-import { Button, Flex, Heading, Input, Text } from '@chakra-ui/react'
+import { Avatar, Badge, Button, Flex, Heading, Input, Text } from '@chakra-ui/react'
 import { faArrowDown, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
@@ -23,9 +23,9 @@ export default function Page() {
                 py={[20, 0, 0]}
             >
                 <Heading size={'2xl'} w={600} textAlign={'center'}>
-                    Comming Soon Page
+                    Explore the DreyerX Ecosystem
                 </Heading>
-                {/* <Text>
+                <Text>
                     Discover all the apps and projects in the DreyerX ecosystem.
                 </Text>
                 <Button
@@ -63,7 +63,39 @@ export default function Page() {
                             <FontAwesomeIcon icon={faArrowDown} />
                         </Flex>
                     </Flex>
-                </Flex> */}
+                </Flex>
+
+                <Flex flexDirection={'row'} gap={2}>
+                    {
+                        EcosystemData.map((ecosystem) => {
+                            return (
+                                <Flex
+                                    p={5}
+                                    borderRadius={5}
+                                    bgColor={'card'}
+                                    w={'full'}
+                                    flexDirection={'column'}
+                                    borderWidth={1}
+                                    borderColor={'white20'}
+                                    flexWrap={'wrap'}
+                                    flexBasis={'25%'}
+                                    gap={5}
+                                >
+                                    <Flex gap={4} align={'center'} justifyContent={'start'}>
+                                        <Avatar src={ecosystem.image} />
+                                        <Flex flexDirection={'column'} gap={1}>
+                                            <Heading size={'md'}>{ecosystem.name}</Heading>
+                                            <Badge colorScheme='green' p={1}>{ ecosystem.category }</Badge>
+                                        </Flex>
+                                    </Flex>
+                                    <Text>
+                                        { ecosystem.description }
+                                    </Text>
+                                </Flex>
+                            )
+                        })
+                    }
+                </Flex>
             </Flex>
             <FooterSection />
         </>
