@@ -1,10 +1,10 @@
 {
   "name": "dreyerx-website",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "export REACT_APP_VERSION=$(git rev-parse HEAD) && next dev",
+    "build": "export REACT_APP_VERSION=$(git rev-parse HEAD) && next build",
     "start": "next start",
     "lint": "next lint"
   },
