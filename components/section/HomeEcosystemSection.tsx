@@ -21,7 +21,7 @@ export default function HomeEcosystemSection() {
             <Box position={'absolute'} w={'70%'} h={700} bgColor={'primary'} zIndex={-1} filter={'blur(100px)'} rounded={360} opacity={.2}>
 
             </Box>
-            <Box mx={[10, 425]}>
+            <Box mx={[10, 425]} mt={[20, 0]}>
                 <Heading textAlign={'center'} as="h2" size="xl" mb="4" color="primary">
                     Join Our Ecosystem?
                 </Heading>
@@ -30,12 +30,12 @@ export default function HomeEcosystemSection() {
             </Box>
 
             <Flex gap={5} flexDirection={['column', 'row']}>
-                <Flex flexDirection={'column'} w={'100%'} bgColor={'card60'} p={30} borderRadius={20} gap={3} borderWidth={1} borderColor={'white10'} data-aos="zoom-out">
+                <Flex flexDirection={'column'} w={'100%'} bgColor={'card60'} p={30} borderRadius={20} gap={3} borderWidth={1} borderColor={'white10'}>
                     <Heading size={'sm'}>FOR EVERYONE</Heading>
                     <Heading>20+ dApps</Heading>
 
                 </Flex>
-                <Flex flexDirection={'column'} w={'100%'} bgColor={'card60'} p={30} borderRadius={20} gap={3} borderWidth={1} borderColor={'white10'} data-aos="zoom-out">
+                <Flex flexDirection={'column'} w={'100%'} bgColor={'card60'} p={30} borderRadius={20} gap={3} borderWidth={1} borderColor={'white10'}>
                     <Heading size={'sm'}>FOR DEVELOPERS</Heading>
                     <Heading>100+ Developers</Heading>
                 </Flex>
