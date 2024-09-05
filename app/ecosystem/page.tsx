@@ -16,14 +16,12 @@ export default function Page() {
                 my={5}
                 w={'full'}
                 gap={'30px'}
-                // justify={'center'}
                 align={'center'}
-                // h={'100vh'}
                 px={[10, 0, '165px']}
                 py={[50, 0, 10]}
                 mt={200}
             >
-                <Heading size={'2xl'} w={600} textAlign={'center'}>
+                <Heading size={'2xl'} w={[300, 600]} textAlign={'center'}>
                     Explore the DreyerX Ecosystem
                 </Heading>
                 <Text>
@@ -32,16 +30,20 @@ export default function Page() {
                 <Button
                     p={7}
                     bgColor={'primary'}
+                    transition={'all .5s ease-in-out'}
+                    _hover={{
+                        bgColor: 'hover.primary'
+                    }}
                 >
                     <Flex gap={3} align={'center'} justify={'center'} h={'full'}>
-                        <Text>
+                        <Text color={'white'}>
                             Submit your project
                         </Text>
-                        <FontAwesomeIcon icon={faArrowRight} />
+                        <FontAwesomeIcon color='white' icon={faArrowRight} />
                     </Flex>
                 </Button>
 
-                <Flex w={'full'} gap={300} mt={100}>
+                <Flex w={'full'} flexDirection={['column-reverse', 'row']} gap={[3, 300]} mt={100}>
                     <Input
                         bgColor={'card'}
                         placeholder='Search for projects'
@@ -49,7 +51,7 @@ export default function Page() {
                         borderColor={'white10'}
                     />
 
-                    <Flex gap={2}>
+                    <Flex gap={2} flexDirection={['column', 'row']}>
                         <Flex w={'full'} gap={3} cursor={'pointer'} bgColor={'card'} justify={'center'} align={'center'} p={3} px={5} borderRadius={5}>
                             <Text size={'sm'}>
                                 MAINNET
@@ -66,7 +68,7 @@ export default function Page() {
                     </Flex>
                 </Flex>
 
-                <Flex flexDirection={'row'} gap={2}>
+                <Flex flexDirection={['column', 'row']} gap={2}>
                     {
                         EcosystemData.map((ecosystem) => {
                             return (
