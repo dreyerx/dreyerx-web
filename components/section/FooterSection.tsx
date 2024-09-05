@@ -76,7 +76,7 @@ export default function FooterSection() {
     <Flex width={'full'} flexDirection={'column'} bgColor={'footer'} p={[10, '60px']} bottom={0} py={20}>
       <Box mx={[0, 20]}>
         <Flex align={'start'} justify={'space-between'} flexDirection={['column', 'row']} gap={[10, 0]}>
-          <Flex flexDirection={['column', 'column']} w={'500px'} gap={5}>
+          <Flex flexDirection={['column', 'column']} w={['full', '500px']} gap={5}>
             <Image src='assets/images/dreyerx-typograph.png' width={'200px'} alt='DreyerX Logo' />
             <Text>
               Empowering transactions with speed and security on our POA-powered Layer 1 blockchain project
