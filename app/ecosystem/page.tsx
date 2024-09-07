@@ -2,7 +2,7 @@
 import Header from '@/components/Header'
 import FooterSection from '@/components/section/FooterSection'
 import { EcosystemData } from '@/data/ecosystem'
-import { Avatar, Badge, Button, Flex, Heading, Input, Text } from '@chakra-ui/react'
+import { Avatar, Badge, Button, Flex, Heading, Input, Select, Text } from '@chakra-ui/react'
 import { faArrowDown, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
@@ -36,35 +36,84 @@ export default function Page() {
                     }}
                 >
                     <Flex gap={3} align={'center'} justify={'center'} h={'full'}>
-                        <Text color={'white'}>
+                        <Text color={'text'}>
                             Submit your project
                         </Text>
-                        <FontAwesomeIcon color='white' icon={faArrowRight} />
+                        <FontAwesomeIcon color='text' icon={faArrowRight} />
                     </Flex>
                 </Button>
 
-                <Flex w={'full'} flexDirection={['column-reverse', 'row']} gap={[3, 300]} mt={100}>
+                <Flex w={'full'} flexDirection={['column-reverse', 'row']} gap={[3, 3]} mt={100}>
                     <Input
                         bgColor={'card'}
                         placeholder='Search for projects'
                         p={7}
                         borderColor={'white10'}
+                        // color={'text'}
+                        _hover={{
+                            borderColor: 'white40'
+                        }}
+                        _focusVisible={{
+                            borderColor: 'white40'
+                        }}
                     />
 
-                    <Flex gap={2} flexDirection={['column', 'row']}>
-                        <Flex w={'full'} gap={3} cursor={'pointer'} bgColor={'card'} justify={'center'} align={'center'} p={3} px={5} borderRadius={5}>
-                            <Text size={'sm'}>
-                                MAINNET
-                            </Text>
-                            <FontAwesomeIcon icon={faArrowDown} />
-                        </Flex>
-
-                        <Flex gap={3} w={'full'} cursor={'pointer'} bgColor={'card'} justify={'center'} align={'center'} p={3} px={5} borderRadius={5}>
-                            <Text size={'sm'}>
-                                ALL CATEGORIES
-                            </Text>
-                            <FontAwesomeIcon icon={faArrowDown} />
-                        </Flex>
+                    <Flex gap={2} flexDirection={['column', 'row']} w={'full'}>
+                        <Select
+                            bgColor={'card'}
+                            borderColor={'white10'}
+                            _hover={{
+                                borderColor: 'white40'
+                            }}
+                            _focusVisible={{
+                                borderColor: 'white40'
+                            }}
+                            h={'60px'}
+                            w={'full'}
+                            sx={{
+                                option: {
+                                    bg: 'card', // Background default option
+                                    color: 'text',
+                                    _hover: {
+                                        bg: 'primary', // Background saat hover
+                                    },
+                                    _checked: {
+                                        bg: 'primary', // Background saat dipilih
+                                    },
+                                },
+                            }}
+                        >
+                            <option value="all" selected>All</option>
+                            <option value="mainnet">Mainnet</option>
+                            <option value="testnet">Testnet</option>
+                        </Select>
+                        <Select
+                            bgColor={'card'}
+                            borderColor={'white10'}
+                            _hover={{
+                                borderColor: 'white40'
+                            }}
+                            _focusVisible={{
+                                borderColor: 'white40'
+                            }}
+                            h={'60px'}
+                            w={'full'}
+                            sx={{
+                                option: {
+                                    bg: 'card', // Background default option
+                                    color: 'text',
+                                    _hover: {
+                                        bg: 'primary', // Background saat hover
+                                    },
+                                    _checked: {
+                                        bg: 'primary', // Background saat dipilih
+                                    },
+                                },
+                            }}
+                        >
+                            <option value="all" selected>All</option>
+                            <option value="dex">DEX</option>
+                        </Select>
                     </Flex>
                 </Flex>
 
@@ -88,11 +137,11 @@ export default function Page() {
                                         <Avatar src={ecosystem.image} />
                                         <Flex flexDirection={'column'} gap={1}>
                                             <Heading size={'md'}>{ecosystem.name}</Heading>
-                                            <Badge colorScheme='green' p={1}>{ ecosystem.category }</Badge>
+                                            <Badge colorScheme='green' p={1}>{ecosystem.category}</Badge>
                                         </Flex>
                                     </Flex>
                                     <Text>
-                                        { ecosystem.description }
+                                        {ecosystem.description}
                                     </Text>
                                 </Flex>
                             )
