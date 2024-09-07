@@ -1,6 +1,6 @@
 {
   "name": "dreyerx-website",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "private": true,
   "scripts": {
     "dev": "export REACT_APP_VERSION=$(git rev-parse HEAD) && next dev",
