@@ -13,7 +13,6 @@ interface RoadmapItemProps {
 function RoadmapItem(props: RoadmapItemProps) {
     return (
         <Flex
-            key={"roadmap-root-" + props.title}
             bg={'card60'}
             p={10}
             borderWidth={1}
@@ -35,9 +34,9 @@ function RoadmapItem(props: RoadmapItemProps) {
             <Divider color={'white10'} />
             <Flex flexDirection={'column'} gap={3}>
                 {
-                    props.roads.map((road) => {
+                    props.roads.map((road, index) => {
                         return (
-                            <Flex gap={2} align={'center'} key={"roadmap-item-" + road}>
+                            <Flex gap={2} align={'center'} key={`roadmap-data-${index}`}>
                                 <FontAwesomeIcon icon={faCheckDouble} />
                                 <Text>
                                     {road}
@@ -77,9 +76,10 @@ export default function RoadmapSection() {
 
             <Flex flexDirection={['column', 'row']} gap={'20px'}>
                 {
-                    RoadmapData.data.map((v) => {
+                    RoadmapData.data.map((v, index) => {
                         return (
                             <RoadmapItem
+                                key={`roadmap-index-${index}`}
                                 title={v.title}
                                 phase={v.phase}
                                 roads={v.roads}
