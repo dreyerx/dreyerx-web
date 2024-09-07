@@ -17,6 +17,7 @@ const theme = extendTheme({
     card40: '#2a2a2a28',
     card60: '#2a2a2a3c',
     text: '#d6d6d8',
+    text95: '#d6d6d864',
     primary: '#7a22c9',
     primary20: '#7a22c9',
     error: '#ff5252',
