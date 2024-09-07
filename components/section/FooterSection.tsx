@@ -23,7 +23,7 @@ async function getLastestVersion() {
   })
   const response_json = await response.json()
   return response_json['version']
-} 
+}
 
 function FooterLink(props: { name: string, url: string }) {
   return <Link key={props.name} href={props.url}>{props.name}</Link>
@@ -41,31 +41,53 @@ function FooterLinkIcon(props: { icon: IconKeys, url: string }) {
 
 function FooterLinkRender(props: { data: Array<{ title: string, links: Array<{ name?: string, url: string, icon?: string }> }> }) {
   return props.data.map((footer) => {
-    return (
-      <Flex gap={3} flexDirection={'column'} key={footer.title}>
-        <Heading size={'sm'} mb={3} textTransform={'uppercase'}>
-          {footer.title}
-        </Heading>
+    if (footer.title.toLowerCase() == "community") {
+      return (
+        <Flex gap={3} flexDirection={'column'} key={footer.title}>
+          <Heading size={'sm'} mb={3} textTransform={'uppercase'}>
+            {footer.title}
+          </Heading>
 
-        {
-          footer.links.map((link) => {
-            if (typeof link.icon === "undefined" && typeof link.name === "string") {
-              return FooterLink({ name: link.name, url: link.url })
-            } else if (typeof link.icon == "string") {
-              return FooterLinkIcon({ icon: link.icon as IconKeys, url: link.url })
+          <Flex gap={3}>
+            {
+              footer.links.map((link) => {
+                if (typeof link.icon === "undefined" && typeof link.name === "string") {
+                  return FooterLink({ name: link.name, url: link.url })
+                } else if (typeof link.icon == "string") {
+                  return FooterLinkIcon({ icon: link.icon as IconKeys, url: link.url })
+                }
+              })
             }
-          })
-        }
-      </Flex>
-    )
+          </Flex>
+        </Flex>
+      )
+    } else {
+      return (
+        <Flex gap={3} flexDirection={'column'} key={footer.title}>
+          <Heading size={'sm'} mb={3} textTransform={'uppercase'}>
+            {footer.title}
+          </Heading>
+
+          {
+            footer.links.map((link) => {
+              if (typeof link.icon === "undefined" && typeof link.name === "string") {
+                return FooterLink({ name: link.name, url: link.url })
+              } else if (typeof link.icon == "string") {
+                return FooterLinkIcon({ icon: link.icon as IconKeys, url: link.url })
+              }
+            })
+          }
+        </Flex>
+      )
+    }
   })
 }
 
 export default function FooterSection() {
-  const [gitLatestVersion, setGitLatestVersion ] = useState()
+  const [gitLatestVersion, setGitLatestVersion] = useState()
 
   useEffect(() => {
-    (async() => {
+    (async () => {
       const gitLatestVersion_response = await getLastestVersion()
 
       setGitLatestVersion(gitLatestVersion_response)
@@ -88,7 +110,7 @@ export default function FooterSection() {
             }
           </Flex>
         </Flex>
-        <Text textAlign={'end'} mt={'60px'}>Copyright &copy; 2024 DreyerX - v{ gitLatestVersion }</Text>
+        <Text textAlign={'end'} mt={'60px'}>Copyright &copy; 2024 DreyerX - v{gitLatestVersion}</Text>
       </Box>
     </Flex>
   )
