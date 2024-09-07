@@ -7,10 +7,10 @@ export default function HomeEcosystemSection() {
             w={'full'}
             flexDirection={'column'}
             align={'center'}
-            h={['full', 'full', '100vh']}
+            h={['full', 'full', 'full']}
             px={[10, '30px', '165px']}
             gap={30}
-            py={['100px', 10, 10]}
+            py={['100px', 10, '230px']}
             justifyContent={'center'}
             backgroundImage={'url("assets/images/ecosystem-icons.svg")'}
             backgroundPosition={['top -90px center', 'top -200px center']}
@@ -21,9 +21,9 @@ export default function HomeEcosystemSection() {
             <Box position={'absolute'} w={'70%'} h={700} bgColor={'primary'} zIndex={-1} filter={'blur(100px)'} rounded={360} opacity={.2}>
 
             </Box>
-            <Box mx={[10, 425]} mt={[20, 0]}>
+            <Box mx={[10, 425]} mt={[20]}>
                 <Heading textAlign={'center'} as="h2" size="xl" mb="4" color="primary">
-                    Join Our Ecosystem?
+                    Join Our Ecosystem
                 </Heading>
                 <Text fontSize="lg" mb={'20px'} textAlign={'center'}>
                     With innovative solutions in blockchain technology and a vibrant, global developer community, there's never been a better time to start building on DreyerX.                </Text>
