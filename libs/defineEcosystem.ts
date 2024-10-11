@@ -1,6 +1,6 @@
 type Category = 'infra' | 'dex' | 'bridge' | 'wallet' | 'gaming' | 'nft' | 'sdk' | 'other';
 
-interface Ecosystem {
+export interface EcosystemProps {
     name: string;
     category: Category;
     image: string;
@@ -8,6 +8,6 @@ interface Ecosystem {
     description: string;
 }
 
-export default function defineEcosystem(ecosystemData: Ecosystem): Ecosystem {
+export default function defineEcosystem(ecosystemData: EcosystemProps): EcosystemProps {
     return ecosystemData;
 }
