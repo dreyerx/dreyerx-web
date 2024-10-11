@@ -3,6 +3,8 @@ import ProviderProps from '@/interface/props/ProviderProps'
 import { ChakraProvider, extendTheme, StyleFunctionProps, type ThemeConfig } from '@chakra-ui/react'
 import Aos from 'aos'
 import React, { useEffect } from 'react'
+import PerfectScrollbar from "react-perfect-scrollbar";
+import "react-perfect-scrollbar/dist/css/styles.css";
 
 const config: ThemeConfig = {
   initialColorMode: 'light',
@@ -32,11 +34,20 @@ const theme = extendTheme({
   },
   styles: {
     global: (props: StyleFunctionProps) => ({
+      "*": {
+        scrollbarWidth: 'thin'
+      },
       body: {
         bg: 'bg',
         color: 'text',
         fontWeight: 500
-      }
+      },
+      '.ps__rail-x, .ps__rail-y': {
+        backgroundColor: 'rgba(255, 255, 255, 0)',
+      },
+      '.ps__thumb-x, .ps__thumb-y': {
+        backgroundColor: 'rgba(255, 255, 255, 0)',
+      },
     })
   }
 })
@@ -49,7 +60,17 @@ export default function Provider(props: ProviderProps) {
   });
   return (
     <ChakraProvider theme={theme}>
-      {props.children}
+      <PerfectScrollbar
+        options={{
+          wheelSpeed: .5,
+          swipeEasing: true,
+        }}
+        style={{
+          backgroundColor: 'rgba(255, 255, 255, 0)'
+        }}
+      >
+        {props.children}
+      </PerfectScrollbar>
     </ChakraProvider>
   )
 }
