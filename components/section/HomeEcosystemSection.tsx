@@ -26,7 +26,8 @@ export default function HomeEcosystemSection() {
                     Join Our Ecosystem
                 </Heading>
                 <Text fontSize="lg" mb={'20px'} textAlign={'center'}>
-                    With innovative solutions in blockchain technology and a vibrant, global developer community, there's never been a better time to start building on DreyerX.                </Text>
+                    With innovative solutions in blockchain technology and a vibrant, global developer community, there never been a better time to start building on DreyerX.
+                </Text>
             </Box>
 
             <Flex gap={5} flexDirection={['column', 'row']}>
