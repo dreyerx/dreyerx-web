@@ -2,12 +2,22 @@
 import Header from '@/components/Header'
 import FooterSection from '@/components/section/FooterSection'
 import { EcosystemData } from '@/data/ecosystem'
+import { EcosystemProps } from '@/libs/defineEcosystem'
 import { Avatar, Badge, Button, Flex, Heading, Input, Select, Text } from '@chakra-ui/react'
 import { faArrowDown, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 export default function Page() {
+    const [ecosystems, setEcosystems] = useState<EcosystemProps[]>([])
+
+    const [query, setQuery] = useState("")
+
+    useEffect(() => {
+        const ecosystemData = EcosystemData.filter((v) => v.name.toLowerCase().includes(query.toLowerCase()) || v.description.toLowerCase().includes(query.toLowerCase()))
+        setEcosystems(ecosystemData)
+    }, [query])
+
     return (
         <>
             <Header />
@@ -50,6 +60,8 @@ export default function Page() {
                         p={7}
                         borderColor={'white10'}
                         color={'text'}
+                        value={query}
+                        onChange={(v) => setQuery(v.target.value)}
                         _hover={{
                             borderColor: 'white40'
                         }}
@@ -117,9 +129,9 @@ export default function Page() {
                     </Flex>
                 </Flex>
 
-                <Flex flexDirection={['column', 'row']} gap={2}>
+                <Flex flexDirection={['column', 'row']} width={'full'} justifyContent={'start'} gap={2}>
                     {
-                        EcosystemData.map((ecosystem) => {
+                        ecosystems.map((ecosystem) => {
                             return (
                                 <Flex
                                     key={ecosystem.name}
