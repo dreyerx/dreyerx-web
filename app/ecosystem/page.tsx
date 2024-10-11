@@ -49,7 +49,7 @@ export default function Page() {
                         placeholder='Search for projects'
                         p={7}
                         borderColor={'white10'}
-                        // color={'text'}
+                        color={'text'}
                         _hover={{
                             borderColor: 'white40'
                         }}
@@ -83,9 +83,9 @@ export default function Page() {
                                 },
                             }}
                         >
-                            <option value="all" selected>All</option>
-                            <option value="mainnet">Mainnet</option>
-                            <option value="testnet">Testnet</option>
+                            <option defaultValue="all" selected>All</option>
+                            <option defaultValue="mainnet">Mainnet</option>
+                            <option defaultValue="testnet">Testnet</option>
                         </Select>
                         <Select
                             bgColor={'card'}
@@ -111,8 +111,8 @@ export default function Page() {
                                 },
                             }}
                         >
-                            <option value="all" selected>All</option>
-                            <option value="dex">DEX</option>
+                            <option defaultValue="all" selected>All</option>
+                            <option defaultValue="dex">DEX</option>
                         </Select>
                     </Flex>
                 </Flex>
@@ -122,6 +122,7 @@ export default function Page() {
                         EcosystemData.map((ecosystem) => {
                             return (
                                 <Flex
+                                    key={ecosystem.name}
                                     p={5}
                                     borderRadius={5}
                                     bgColor={'card'}
