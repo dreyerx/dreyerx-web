@@ -1,6 +1,6 @@
 'use client'
 import Header from '@/components/Header'
-import FooterSection from '@/components/section/FooterSection'
+import FooterSection from '@/components/FooterSection'
 import { EcosystemData } from '@/data/ecosystem'
 import { EcosystemProps } from '@/libs/defineEcosystem'
 import { Avatar, Badge, Button, Flex, Heading, Input, Select, Text } from '@chakra-ui/react'

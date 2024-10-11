@@ -23,11 +23,11 @@ export default function GettingStartedSection() {
         h={'full'}
         borderWidth={1}
         borderColor={'white10'}
-        p={[30, '100px']}
-        py={['40px', '100px']}
+        p={[30, 30, '100px']}
+        py={['40px', '40px', '100px']}
         flexDirection={'column'}
         borderRadius={20}
-        gap={[20, '200px']}
+        gap={[20, 20, '200px']}
       >
         <Flex justify={'space-between'} align={'end'} w={'full'} flexDirection={['column', 'row']}>
           <Heading color={'text'} w={['full', '400px']} size={['lg', '2xl']}>
@@ -37,7 +37,7 @@ export default function GettingStartedSection() {
             Start Building
           </Button> */}
         </Flex>
-        <Flex gap={10} flexDirection={['column', 'row']}>
+        <Flex gap={10} flexDirection={['column', 'column', 'row']}>
           <Flex flexDirection={'column'} flexBasis={'50%'} gap={5}>
             <Flex bgColor={'primary'} w={'40px'} h={'40px'} justify={'center'} align={'center'} borderRadius={5}>
               <FontAwesomeIcon icon={faEthereum} size='xl' />

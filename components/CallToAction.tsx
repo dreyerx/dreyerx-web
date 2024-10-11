@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function CallToAction() {
     return (
-        <Flex gap={['20px', 0, '30px']} flexDirection={['column', 'row']}>
+        <Flex gap={['20px', '20px', '30px']} flexDirection={['column', 'column', 'row']}>
             <Flex bg={'card60'} borderWidth={1} borderColor={'white10'} width={[340, 400]} p={7} borderRadius={20} cursor={'pointer'} justify={'space-between'} align={'center'} gap={2} _hover={{
                 '& .icon': {
                     transition: 'all .5s ease-in-out',

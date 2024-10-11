@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <>
-      <Flex bgColor={'bg'} p={[5, 0, 5]} px={[10, 10, 20]} borderBottomWidth={1} borderColor={'white40'} width={'full'} borderBottomRadius={10} position={'fixed'} top={0} zIndex={100}>
+      <Flex bgColor={'bg'} p={[5, 5, 5]} px={[10, 10, 20]} borderBottomWidth={1} borderColor={'white40'} width={'full'} borderBottomRadius={10} position={'fixed'} top={0} zIndex={100}>
         <Flex justify={'space-between'} align={'center'} w={'full'} mx={[0, 0, 20]}>
           <LinkBox>
             <LinkOverlay href='/'>
@@ -26,11 +26,11 @@ export default function Header() {
             </LinkOverlay>
           </LinkBox>
 
-          <Button onClick={() => setIsActiveBar(!isActiveBar)} display={['block', 'none', 'none']} bgColor={'card'} color={'text'} _hover={{ bgColor: 'card' }}>
+          <Button onClick={() => setIsActiveBar(!isActiveBar)} display={['block', 'block', 'none']} bgColor={'card'} color={'text'} _hover={{ bgColor: 'card' }}>
             <FontAwesomeIcon icon={isActiveBar ? faClose : faBars} />
           </Button>
 
-          <Flex gap={'40px'} display={['none', 'flex', 'flex']}>
+          <Flex gap={'40px'} display={['none', 'none', 'flex']}>
             <Link href='/' color={pathname == '/' ? 'text' : 'text95'} transition={'all .3s ease-in-out'} _hover={{
               color: 'white'
             }}>Home</Link>
@@ -51,7 +51,7 @@ export default function Header() {
         </Flex>
       </Flex>
 
-      <Box w={'full'} h={'full'} display={['block', 'none']} zIndex={1000}>
+      <Box w={'full'} h={'full'} display={['block', 'block', 'none']} zIndex={1000}>
         <Fade in={isActiveBar}>
           <Flex display={[isActiveBar ? 'block' : 'none', 'none']} h={'100%'} flexDirection={"column"} position={'fixed'} w={'full'} top={20} p={7} bgColor={'bg'} backdropFilter={'blur(5px)'} borderRadius={10} zIndex={99}>
             <Box bgColor={'primary'} w={'full'} h={'200'} position={'absolute'} filter={'blur(50px)'} opacity={.2}>

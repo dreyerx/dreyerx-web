@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import { Box, Flex } from "@chakra-ui/react";
 import AboutSection from "@/components/section/AboutSection";
 import HeroDecoration from "@/components/decoration/HeroDecoration";
-import FooterSection from "@/components/section/FooterSection";
+import FooterSection from "@/components/FooterSection";
 import HomeEcosystemSection from "@/components/section/HomeEcosystemSection";
 import GettingStartedSection from "@/components/section/GettingStartedSection";
 import { useRef } from "react";

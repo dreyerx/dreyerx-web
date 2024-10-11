@@ -57,8 +57,8 @@ export default function RoadmapSection() {
             flexDirection={'column'}
             bgColor={'bg'}
             align="center"
-            height={['full', '100vh']}
-            px={[10, 0, '165px']}
+            height={['full', 'full', '100vh']}
+            px={[10, 10, '165px']}
             gap={'60px'}
             py={[20, 0, 0]}
             justifyContent={'center'}
@@ -69,12 +69,12 @@ export default function RoadmapSection() {
         >
             <Flex flexDirection={'column'} alignItems={'center'} mb={10}>
                 <Heading size={'xl'} mb={4}>Roadmap</Heading>
-                <Text fontSize={'lg'} textAlign={'center'} maxW={'600px'}>
+                <Text fontSize={'lg'} textAlign={'center'} maxW={['full', 'full','600px']}>
                     Here is the development roadmap for DreyerX, divided into four phases. This roadmap outlines the steps DreyerX will take in the near future to achieve its long-term goals and vision.
                 </Text>
             </Flex>
 
-            <Flex flexDirection={['column', 'row']} gap={'20px'}>
+            <Flex flexDirection={['column', 'column', 'row']} gap={'20px'}>
                 {
                     RoadmapData.data.map((v, index) => {
                         return (
