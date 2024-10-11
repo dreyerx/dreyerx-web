@@ -5,6 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Provider from "./providers";
 
 import "aos/dist/aos.css"
+import GrainOverlay from "@/components/Overlay/grain";
 
 const dmsans = DM_Sans({
   subsets: ['latin'],
@@ -60,7 +61,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={dmsans.className} style={{ scrollBehavior: 'smooth' }}>
-        <Provider>{children}</Provider>
+        <Provider>
+          <GrainOverlay />
+          {children}
+        </Provider>
       </body>
     </html>
   );
