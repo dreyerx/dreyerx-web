@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <>
-      <Flex bgColor={'bg'} p={[5, 0, 5]} px={[10, 10, 20]} borderWidth={1} borderColor={'white40'} width={'full'} borderBottomRadius={10} position={'fixed'} top={0} zIndex={100}>
+      <Flex bgColor={'bg'} p={[5, 0, 5]} px={[10, 10, 20]} borderBottomWidth={1} borderColor={'white40'} width={'full'} borderBottomRadius={10} position={'fixed'} top={0} zIndex={100}>
         <Flex justify={'space-between'} align={'center'} w={'full'} mx={[0, 0, 20]}>
           <LinkBox>
             <LinkOverlay href='/'>
