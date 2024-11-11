@@ -45,8 +45,8 @@ export default function Header() {
             }}>Roadmap</Link>
           </Flex>
 
-          <Link href='https://docs.dreyerx.com' bgColor={'primary'} display={['none', 'none', 'block']} size={'md'} p={2} px={3} borderRadius={5} fontWeight={'bold'} fontSize={15} transition={'.5s ease-in-out'} _hover={{ textDecoration: 'none', bgColor: 'hover.primary' }}>
-            Use DreyerX
+          <Link href='https://docs.dreyerx.com' bgColor={'transparent'} display={['none', 'none', 'block']} borderWidth={2} size={'md'} p={2} px={3} borderRadius={5} fontWeight={'bold'} fontSize={15} transition={'.5s ease-in-out'} _hover={{ textDecoration: 'none', bgColor: 'hover.primary', borderColor: 'primary' }}>
+            Get Started
           </Link>
         </Flex>
       </Flex>
@@ -69,7 +69,7 @@ export default function Header() {
               <Link href='#roadmap'>Roadmap</Link>
 
               <Link href='https://docs.dreyerx.com' bgColor={'primary'} mt={5} size={'md'} p={2} px={3} borderRadius={5} textAlign={'center'} fontWeight={'bold'} fontSize={15} transition={'.5s ease-in-out'} _hover={{ textDecoration: 'none', bgColor: 'hover.primary' }}>
-                Use DreyerX
+                Get Started
               </Link>
             </Flex>
           </Flex>

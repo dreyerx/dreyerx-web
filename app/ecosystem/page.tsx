@@ -3,12 +3,13 @@ import Header from '@/components/Header'
 import FooterSection from '@/components/FooterSection'
 import { EcosystemData } from '@/data/ecosystem'
 import { EcosystemProps } from '@/libs/defineEcosystem'
-import { Avatar, Badge, Button, Flex, Heading, Input, Select, Text } from '@chakra-ui/react'
-import { faArrowDown, faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { Avatar, Badge, Button, Flex, Heading, Input, LinkBox, LinkOverlay, Select, Text, useToken } from '@chakra-ui/react'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect, useState } from 'react'
 
 export default function Page() {
+    const [text] = useToken("colors", "text")
     const [ecosystems, setEcosystems] = useState<EcosystemProps[]>([])
 
     const [query, setQuery] = useState("")
@@ -49,7 +50,7 @@ export default function Page() {
                         <Text color={'text'}>
                             Submit your project
                         </Text>
-                        <FontAwesomeIcon color='text' icon={faArrowRight} />
+                        <FontAwesomeIcon color={text} icon={faArrowRight} />
                     </Flex>
                 </Button>
 
@@ -133,30 +134,43 @@ export default function Page() {
                     {
                         ecosystems.map((ecosystem) => {
                             return (
-                                <Flex
-                                    key={ecosystem.name}
-                                    p={5}
-                                    borderRadius={5}
-                                    bgColor={'card'}
+                                <LinkBox
                                     w={'full'}
-                                    flexDirection={'column'}
-                                    borderWidth={1}
-                                    borderColor={'white20'}
-                                    flexWrap={'wrap'}
+                                    h={'full'}
                                     flexBasis={'25%'}
-                                    gap={5}
+                                    flexWrap={'wrap'}
+                                    flexDirection={'column'}
+                                    key={ecosystem.name}
+                                    transition={'all ease-in-out .5s'}
+                                    _hover={{
+                                        transform: 'translateY(-5px)'
+                                    }}
                                 >
-                                    <Flex gap={4} align={'center'} justifyContent={'start'}>
-                                        <Avatar src={ecosystem.image} />
-                                        <Flex flexDirection={'column'} gap={1}>
-                                            <Heading size={'md'}>{ecosystem.name}</Heading>
-                                            <Badge colorScheme='green' p={1}>{ecosystem.category}</Badge>
+                                    <LinkOverlay
+                                        href={ecosystem.url}
+                                    >
+                                        <Flex
+                                            p={5}
+                                            borderRadius={5}
+                                            bgColor={'card'}
+                                            flexDirection={'column'}
+                                            borderWidth={1}
+                                            borderColor={'white20'}
+                                            gap={5}
+                                        >
+                                            <Flex gap={4} align={'center'} justifyContent={'start'}>
+                                                <Avatar src={ecosystem.image} />
+                                                <Flex flexDirection={'column'} gap={1}>
+                                                    <Heading size={'md'}>{ecosystem.name}</Heading>
+                                                    <Badge colorScheme='green' p={1} pl={2}>{ecosystem.category}</Badge>
+                                                </Flex>
+                                            </Flex>
+                                            <Text>
+                                                {ecosystem.description}
+                                            </Text>
                                         </Flex>
-                                    </Flex>
-                                    <Text>
-                                        {ecosystem.description}
-                                    </Text>
-                                </Flex>
+                                    </LinkOverlay>
+                                </LinkBox>
                             )
                         })
                     }
