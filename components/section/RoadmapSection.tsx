@@ -15,6 +15,7 @@ function RoadmapItem(props: RoadmapItemProps) {
         <Flex
             bg={'card60'}
             p={10}
+            marginBottom={20}
             borderWidth={1}
             borderColor={'white10'}
             backdropFilter={'blur(20px)'}
