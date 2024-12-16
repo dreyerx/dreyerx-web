@@ -37,9 +37,9 @@ export default function Header() {
             <Link href='/ecosystem' color={pathname == '/ecosystem' ? 'text' : 'text95'} transition={'all .3s ease-in-out'} _hover={{
               color: 'white'
             }}>Ecosystem</Link>
-            <Link href='https://docs.dreyerx.com/architecrure/tokenomics' color={pathname == '/tokenmonics' ? 'text' : 'text95'} transition={'all .3s ease-in-out'} _hover={{
+            <Link href='https://docs.dreyerx.com/architecrure/tokenomics' color={pathname == '/tokenomics' ? 'text' : 'text95'} transition={'all .3s ease-in-out'} _hover={{
               color: 'white'
-            }}>Tokenmonics</Link>
+            }}>Tokenomics</Link>
             <Link href='/#roadmap' color={pathname == '/roadmap' ? 'text' : 'text95'} transition={'all .3s ease-in-out'} _hover={{
               color: 'white'
             }}>Roadmap</Link>
@@ -64,7 +64,7 @@ export default function Header() {
               <Divider />
               <Link href='/ecosystem'>Ecosystem</Link>
               <Divider />
-              <Link href='https://docs.dreyerx.com/architecrure/tokenomics'>Tokenmonics</Link>
+              <Link href='https://docs.dreyerx.com/architecrure/tokenomics'>Tokenomics</Link>
               <Divider />
               <Link href='#roadmap'>Roadmap</Link>
 
